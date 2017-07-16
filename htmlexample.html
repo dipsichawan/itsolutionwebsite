@@ -1,0 +1,253 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="google-site-verification" content="iwT0Y8cCpG4xHx-GKMvRNWh104tM1BhPQBvAycjQsmM" />
+    <style>
+	#img1
+	{
+       -webkit-filter: opacity(50%); /* Safari */
+    filter: opacity(50%);
+	}
+	#content1{
+	background-color:gray;
+	}
+		#content2{
+	background-color:black;
+	}
+	#foot1
+	{
+	background-color:#D3D3D3;
+	}
+	@media screen and (max-width:768px) {
+		#mynavbar2
+	{
+	overflow: auto;
+	height: 50%;
+	}
+}
+
+	</style>
+		<script type="text/javascript">
+		
+	function runCode1()
+	{
+	var content1 = document.getElementById('sourceCode').value;
+		var iframe = document.getElementById('targetCode');
+		iframe = (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument.document) ? iframe.contentDocument.document : iframe.contentDocument;
+		iframe.document.open();
+		iframe.document.write(content1);
+		iframe.document.close();
+		return true;
+	}
+	runCode1();
+	</script>
+	<script type="text/javascript">
+		function runCode2()
+	{
+	var content2 = document.getElementById('sourceCode2').value;
+		var iframe = document.getElementById('targetCode2');
+		iframe = (iframe.contentWindow) ? iframe.contentWindow : (iframe.contentDocument.document) ? iframe.contentDocument.document : iframe.contentDocument;
+		iframe.document.open();
+		iframe.document.write(content2);
+		iframe.document.close();
+		return false;
+	}
+	runCode2();
+	</script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+	  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar2">
+        <font color="white"><span class="glyphicon glyphicon-triangle-bottom"></span>&nbsp;More</font>
+      </button>
+      <a class="navbar-brand" href="#"><font color="red" face="elephant" size="20">IT</font></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+	    <li><a href="homepage.html">
+                    <span class="glyphicon glyphicon-home"></span> 
+                    Home</a></li>
+					<li><a href="services.html">
+                    <span class="glyphicon glyphicon-picture"></span>  
+                    Services</a></li>
+                    <li><a href="about.html">
+                    <span class="glyphicon glyphicon-king"></span>  
+                    About Us</a></li>
+					<li><a href="cont1.html">
+                    <span class="glyphicon glyphicon-phone"></span>  
+                    Videos</a></li>
+      </ul>
+	  <ul class="nav navbar-nav navbar-right">
+                    <li><a href="askquery.html"><span class="glyphicon 
+                    glyphicon-pencil"></span>Ask Query</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid text-center">    
+  <div class="row content" >
+  
+    <div class="col-sm-2">
+	<div id="mynavbar2" class="collapse navbar-collapse" style="background-color:lavenderblush;">
+	<ul class="nav nav-pills nav-stacked">
+	<li><font size="5"><b>HTML Example</b></font></li>
+  <li class="active"><a data-toggle="pill"  href="#example1">Simple Html</a></li>
+  <li><a  data-toggle="pill" href="#example2">HTML Headers</a></li>  
+  </ul>  
+    </div>
+	</div>
+	
+
+<div class="col-sm-10 text-left"> 
+<div class="tab-content">
+  
+<div id="example1" class="tab-pane fade in active">
+<div class="panel panel-default">
+<div class="panel-heading">
+<center><input type="button" style="background-color:#FFC300;border-color:#FFC300;color:white;margin-top:10px;"
+class="btn btn-default" value="runcode" onclick="runCode1()"/>
+</center>
+</div>
+<div class="panel-body">
+<textarea name="sourceCode" id="sourceCode" style="width:100%;height:300px";>
+<html>
+<head>
+<title>Hello</title>
+</head>
+<body>
+<h1>Hello!</h1>
+<p>Write HTML, CSS or JavaScript code here and click 'Run Code'.</p>
+</body>
+</html>
+</textarea>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+ <center><p>OUTPUT:</p></center>
+ </div>
+<div class="panel-body">
+<iframe name="targetCode" id="targetCode" style="width:100%;height:300px";></iframe>
+</div>
+</div>
+</div>
+
+<div id="example2" class="tab-pane fade">
+<div class="panel panel-default">
+<div class="panel-heading">
+<center><input type="button" style="background-color:#FFC300;border-color:#FFC300;color:white;margin-top:10px;"
+class="btn btn-default" value="runcode" onclick="runCode2()"/>
+</center>
+</div>
+<div class="panel-body">
+<textarea name="sourceCode2" id="sourceCode2" style="width:100%;height:300px";>
+<html>
+<head>
+<title>Hello</title>
+</head>
+<body>
+<h1>Header 1</h1>
+<h2>header 2</h2>
+<h3>header 3</h3>
+<h4>header 4</h4>
+<h5>header 5</h5>
+<h6>header 6</h6>
+</body>
+</html>
+</textarea>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+ <center><p>OUTPUT:</p></center>
+ </div>
+<div class="panel-body">
+<iframe name="targetCode2" id="targetCode2" style="width:100%;height:300px";></iframe>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+
+</div>	
+</div>
+	
+	 <br>
+  <div class="container" id="content2">
+  <br>
+  <font color="white">
+  <p><span class="glyphicon glyphicon-phone"></span> +91 7769857444 &nbsp &nbsp &nbsp
+  <span class="glyphicon glyphicon-envelope"></span>chawandipsi@gmail.com</p> 
+  </font>
+  <br>
+  </div>
+  <div class="container" id="content1">
+  <div class="row">
+    <div class="col-sm-4">
+	<h3><font color="white">Page Links</font></h3>
+	<ul class="nav nav-pills nav-stacked">
+  <li><a href="homepage.html"><font color="white">Home</font></a></li>
+  <li><a href="services.html"><font color="white">Services</font></a></li>
+  <li><a href="about.html"><font color="white">About Us</font></a></li>
+  <li><a href="videos.html"><font color="white">Videos</font></a></li>
+  <li><a href="askquery.html"><font color="white">Feedback</font></a></li>
+  </ul>  
+  </div>
+		<div class="col-sm-4"> 
+		<h3><font color="white">About Us</font></h3>
+		<p>
+		<font color="white">
+		IT Solutions offers a thousands of free
+		tutorials for IT professionals, hobbyists, and home users. Our
+		goal is to help you solve your computer problems and learn new
+		technologies using the many existing free tutorials available on 
+		the internet. This site also contains video on different technologies.
+
+		</font> 
+		</p>
+		<p>
+		<font color="white">
+		
+		</font> 
+		</p>
+	</div>
+	<h3><font color="white">Location</font></h3>
+	<font color="white">
+	  <p><span class="glyphicon glyphicon-map-marker"></span>Maharashtra, India</p>
+	  </font>
+	  <div class="col-sm-4"> 
+	</div>
+  </div>
+  </div>
+  <div class="container" id="foot1">
+  <br>
+  <br>
+  <footer class="container-fluid text-center">
+  <a href="#" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <br>
+  <br>
+  <p> 2017 It solution.All Rights Reserved.IT SOLUTION</p> 
+</footer>
+</div>
+</body>
+</html>
